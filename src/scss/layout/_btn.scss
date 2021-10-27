@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$white;
+    border-radius: 4rem;
+    width: 15rem;
+    max-height: 5rem;
+    margin-top: 8rem;
+    max-width: 100%;
+    padding: 2rem 2rem;
+
+    &:hover {
+        border: .3rem solid v.$white;
+        color: v.$white;
+    }
+
+}

@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: v.$very_light_gray;
+    font-family: v.$font_title;
+    font-size: 1.8rem;
+    text-align: center;
+    color: v.$white;
+}
+a {
+    text-decoration: none;
+    font-family: v.$font_text;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+p {
+    font-size: 1.4rem;
+    font-family: v.$font_text;
+    color: v.$transparent_white;
+}
+footer {
+
+    color: v.$blue;
+}

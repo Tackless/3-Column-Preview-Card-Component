@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-general {
+    width: 100%;
+    max-width: 30rem;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    @include m.tablet {
+        flex-direction: row;
+        max-width: 82rem;
+    } 
+    
+}
+.contenedor {
+    padding: 7rem 4rem;
+    margin: 0 auto;
+    img {
+        display: flex;
+    }
+    h1 {
+        text-align: left;
+    }
+    p {
+        text-align: left;
+        line-height: 2rem;
+    }
+}
+.sedans {
+    background-color: v.$bright_orange;
+    a {
+        color: v.$bright_orange;
+    }
+    .btn:hover {
+        background-color: v.$bright_orange;
+    }
+}
+.suvs {
+    background-color: v.$dark_cyan;
+    a {
+        color: v.$dark_cyan;
+    }
+    .btn:hover {
+        background-color: v.$dark_cyan;
+    }
+}
+.luxury {
+    background-color: v.$very_dark_cyan;
+    a {
+        color: v.$very_dark_cyan;
+    }
+    .btn:hover {
+        background-color: v.$very_dark_cyan;
+    }
+}
